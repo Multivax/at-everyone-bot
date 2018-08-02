@@ -27,9 +27,8 @@ client.on('message', message => {
 						reason:message.content
 				});
 				message.delete();
+				message.channel.send("@everyone just got banned for breaking the rules.");
 		}
-
-		message.channel.send("@everyone just got banned for breaking the rules.");
 });
 
 client.on('guildMemberAdd', guildMember => {
