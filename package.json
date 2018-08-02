@@ -1,0 +1,23 @@
+{
+  "name": "at-everyone",
+  "version": "1.0.0",
+  "description": "A useless discord bot ",
+  "main": "bot.js",
+  "dependencies": {
+    "discord.js": "^11.3.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Multivax/at-everyone-bot.git"
+  },
+  "author": "Multivax",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Multivax/at-everyone-bot/issues"
+  },
+  "homepage": "https://github.com/Multivax/at-everyone-bot#readme"
+}
