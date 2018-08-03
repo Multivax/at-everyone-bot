@@ -24,7 +24,7 @@ client.on('message', message => {
 
 		if (isMessageIllegal(message)) {
 				message.member.ban({
-						reason:message.content
+						reason:message.content.substring(0, 511)
 				});
 				message.delete();
 				message.channel.send("@everyone just got banned for breaking the rules.");
