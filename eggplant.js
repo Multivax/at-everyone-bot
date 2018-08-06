@@ -8,7 +8,10 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-	if (message.content.includes("egg")) {
+	if (message.content.toLowerCase().includes("egg") ||
+		message.content.includes("🍆") ||
+		message.content.includes("🥚")
+	) {
 		message.react("🍆");
 	}
 });
