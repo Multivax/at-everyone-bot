@@ -1,8 +1,8 @@
 {
-  "name": "at-everyone",
+  "name": "useless-bots",
   "version": "1.0.0",
-  "description": "A useless discord bot ",
-  "main": "bot.js",
+  "description": "A collection of useless discord bots",
+  "main": "",
   "dependencies": {
     "discord.js": "^11.3.2"
   },
@@ -12,12 +12,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Multivax/at-everyone-bot.git"
+    "url": "git+https://github.com/Multivax/useless-bots.git"
   },
   "author": "Multivax",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Multivax/at-everyone-bot/issues"
+    "url": "https://github.com/Multivax/useless-bots/issues"
   },
-  "homepage": "https://github.com/Multivax/at-everyone-bot#readme"
+  "homepage": "https://github.com/Multivax/useless-bots#readme"
 }
