@@ -4,7 +4,7 @@ const client = new Discord.Client();
 const token = process.argv[2];
 
 function containsEgg(message) {
-		return message.content.toLowerCase().includes("egg") ||
+	return message.content.toLowerCase().includes("egg") ||
 		message.content.includes("🍆") ||
 		message.content.includes("🥚")
 }
@@ -19,9 +19,19 @@ client.on('message', message => {
 	}
 });
 
-client.on('messageUpdate', (oldMessage, newMessage) => {
+client.on('messageUpdate', (newMessage) => {
 	if (containsEgg(newMessage)) {
 		newMessage.react("🍆");
+	}
+});
+
+client.on('messageReactionAdd', (messageReaction) => {
+	if (messageReaction.me) return;
+	if (
+		messageReaction.emoji.name === "🍆" ||
+		messageReaction.emoji.name === "🥚"
+	) {
+		messageReaction.message.react("🍆");
 	}
 });
 
