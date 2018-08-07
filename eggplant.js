@@ -19,7 +19,7 @@ client.on('message', message => {
 	}
 });
 
-client.on('messageUpdate', (newMessage) => {
+client.on('messageUpdate', (oldMessage, newMessage) => {
 	if (containsEgg(newMessage)) {
 		newMessage.react("🍆");
 	}
