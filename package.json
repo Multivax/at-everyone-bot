@@ -4,7 +4,8 @@
   "description": "A collection of useless discord bots",
   "main": "",
   "dependencies": {
-    "discord.js": "^11.3.2"
+    "discord.js": "^11.3.2",
+    "lmgtfy": "^1.2.0"
   },
   "devDependencies": {},
   "scripts": {
